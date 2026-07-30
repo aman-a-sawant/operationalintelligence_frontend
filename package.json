@@ -16,7 +16,10 @@
     "react": "^19.2.7",
     "react-dom": "^19.2.7",
     "react-router-dom": "^7.18.2",
+<<<<<<< HEAD
     "recharts": "^3.10.1",
+=======
+>>>>>>> c7beb6318e0ba4eacd86a622ea3fbfae64c07da5
     "tailwindcss": "^4.3.3"
   },
   "devDependencies": {

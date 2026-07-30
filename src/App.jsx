@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { Routes, Route } from 'react-router-dom';
 import Dashboard from './pages/dashboard/Dashboard';
 import ProjectDashboard from './pages/project/ProjectDashboard';
@@ -45,6 +46,26 @@ function App() {
       <Route path="*" element={<Dashboard />} />
     </Routes>
   );
+=======
+import { useState } from 'react'
+import {Routes, Route, Navigate} from 'react-router-dom';
+import Login from './pages/auth/Login'
+import Signup from './pages/auth/Signup';
+import './App.css'
+
+function App() {
+  const [count, setCount] = useState(0)
+
+  return (
+    <>
+      <Routes>
+        <Route path="/" element={<Navigate to="/login" replace />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
+      </Routes>
+    </>
+  )
+>>>>>>> c7beb6318e0ba4eacd86a622ea3fbfae64c07da5
 }
 
 export default App;
